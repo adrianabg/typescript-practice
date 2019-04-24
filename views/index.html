@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create your car</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.slim.js" integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylescars.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700|VT323" rel="stylesheet">
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</head>
+
+<body class="container-fluid">
+    <!---------------------- FORM CAR---------------------->
+    <h1 class="my-5 d-flex justify-content-center">Enter your car details</h1>
+    
+    <form id="carForm" onsubmit="validation1()"> 
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-3">
+                <label for="plate">Plate</label>
+                <input type="text" id="plate" class="form-control" placeholder="1111AAA">
+            </div>
+
+            <div class="col-3">
+                <label for="brand">Brand</label>
+                <input type="text" id="brand" class="form-control" placeholder="ex: Opel">          
+            </div>
+
+            <div class="col-3">
+                <label for="plate">Color</label>
+                <input type="text" id="color" class="form-control" placeholder="ex: Gray">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                    <button type="button" onclick="submitCar()" class="btn btn-primary mt-5">Create car</button>
+            </div>  
+        </div>
+
+    </form>
+    
+    <!---------------------- CAR INFO ---------------------->
+    <div class="m-5 p-5 " id="containerInfo">
+            <p id="carInfo" ></p>
+    </div>
+
+    <!---------------------- FORM WHEELS ---------------------->
+    <h2 class="my-5 d-flex justify-content-center">Add the wheels</h2>
+
+    <form id="wheelForm" onsubmit="validation2()"> 
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-2">
+                <label for="wheel1">Diameter Wheel 1</label>
+                <input type="text" id="wheel1" class="form-control" placeholder="From 0.4 to 2">
+            </div>
+            <div class="col-2">
+                <label for="wheel2">Diameter Wheel 2</label>
+                <input type="text" id="wheel2" class="form-control" placeholder="From 0.4 to 2">          
+            </div>
+            <div class="col-2">
+                <label for="wheel3">Diameter Wheel 3</label>
+                <input type="text" id="wheel3" class="form-control" placeholder="From 0.4 to 2">
+            </div>
+            <div class="col-2">
+                <label for="wheel4">Diameter Wheel 4</label>
+                <input type="text" id="wheel4" class="form-control" placeholder="From 0.4 to 2">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-3">
+                <div class="col-2">
+                    <label for="wheel1">Brand Wheel 1</label>
+                    <input type="text" id="brandWheel1" class="form-control" placeholder="ex: Seat">
+                </div>
+                <div class="col-2">
+                    <label for="wheel2">Brand Wheel 2</label>
+                    <input type="text" id="brandWheel2" class="form-control">          
+                </div>
+                <div class="col-2">
+                    <label for="wheel3">Brand Wheel 3</label>
+                    <input type="text" id="brandWheel3" class="form-control">
+                </div>
+                <div class="col-2">
+                    <label for="wheel4">Brand Wheel 4</label>
+                    <input type="text" id="brandWheel4" class="form-control">
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" onclick="submitWheels()" class="btn btn-primary my-5">Save wheels</button>
+            </div>  
+        </div>
+    </form>
+
+    <!---------------------- WHEELS INFO ---------------------->
+    <div class="m-5 p-5 " id="containerWheels">
+        <p id="wheelsInfo1"></p>
+        <p id="wheelsInfo2"></p>
+        <p id="wheelsInfo3"></p>
+        <p id="wheelsInfo4"></p>
+    </div>
+
+</body>
+</html>
+

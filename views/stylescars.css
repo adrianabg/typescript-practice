@@ -1,0 +1,34 @@
+#containerInfo{
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+#carInfo{
+    color:black;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: lightgray;
+    font-family: 'Maven Pro', monospace;
+    font-size: 18px; 
+}
+
+.btn-primary{
+    background-color: #00a0a0;
+    border: #00a0a0;
+}
+
+.btn-primary:hover{
+    background-color: #2dd9d0;
+}
+
+#containerWheels > p{
+    color:black;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: lightgray;
+    font-family: 'Maven Pro', monospace;
+    font-size: 18px; 
+}
