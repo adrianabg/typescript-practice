@@ -18,24 +18,25 @@
 
 <body class="container-fluid">
     <!---------------------- FORM CAR---------------------->
-    <h1 class="my-5 d-flex justify-content-center">Enter your car details</h1>
     
     <form id="carForm" onsubmit="validation1()"> 
+
+        <h1 class="my-5 d-flex justify-content-center">Enter your car details</h1>
 
         <div class="row d-flex justify-content-center">
             <div class="col-3">
                 <label for="plate">Plate</label>
-                <input type="text" id="plate" class="form-control" placeholder="1111AAA">
+                <input type="text" id="plate" class="form-control" value="1111fff" placeholder="1111AAA">
             </div>
 
             <div class="col-3">
                 <label for="brand">Brand</label>
-                <input type="text" id="brand" class="form-control" placeholder="ex: Opel">          
+                <input type="text" id="brand" class="form-control" value="Opel" placeholder="ex: Opel">          
             </div>
 
             <div class="col-3">
                 <label for="plate">Color</label>
-                <input type="text" id="color" class="form-control" placeholder="ex: Gray">
+                <input type="text" id="color" class="form-control" value="Green" placeholder="ex: Gray">
             </div>
         </div>
 
@@ -49,13 +50,16 @@
     
     <!---------------------- CAR INFO ---------------------->
     <div class="m-5 p-5 " id="containerInfo">
+            <h5 id="titleInfo">The information of your car:</h5>
             <p id="carInfo" ></p>
     </div>
 
     <!---------------------- FORM WHEELS ---------------------->
-    <h2 class="my-5 d-flex justify-content-center">Add the wheels</h2>
+    
 
     <form id="wheelForm" onsubmit="validation2()"> 
+
+        <h2 class="my-5 d-flex justify-content-center">Add the wheels</h2>
 
         <div class="row d-flex justify-content-center">
             <div class="col-2">

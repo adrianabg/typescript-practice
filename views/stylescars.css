@@ -12,6 +12,7 @@
     background-color: lightgray;
     font-family: 'Maven Pro', monospace;
     font-size: 18px; 
+    border-radius: 5%;
 }
 
 .btn-primary{
@@ -31,4 +32,12 @@
     background-color: lightgray;
     font-family: 'Maven Pro', monospace;
     font-size: 18px; 
+}
+
+#wheelForm{
+    display: none;
+}
+
+#titleInfo{
+    display: none;
 }
